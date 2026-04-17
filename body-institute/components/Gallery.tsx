@@ -4,12 +4,12 @@ import { useState } from 'react';
 
 // Reemplaza los src con tus imágenes reales
 const galleryItems = [
-  { src: '/images/gallery-1.jpg', alt: 'Sala de tratamiento' },
-  { src: '/images/gallery-2.jpg', alt: 'Área de recepción' },
-  { src: '/images/gallery-3.jpg', alt: 'Cabina facial' },
-  { src: '/images/gallery-4.jpg', alt: 'Equipos médicos' },
-  { src: '/images/gallery-5.jpg', alt: 'Sala de espera' },
-  { src: '/images/gallery-6.jpg', alt: 'Tratamiento corporal' },
+  { src: '/images/gallery-1.png', alt: 'Sala de tratamiento' },
+  { src: '/images/gallery-2.png', alt: 'Área de recepción' },
+  { src: '/images/gallery-3.png', alt: 'Cabina facial' },
+  { src: '/images/gallery-4.png', alt: 'Equipos médicos' },
+  { src: '/images/gallery-5.png', alt: 'Sala de espera' },
+  { src: '/images/gallery-6.png', alt: 'Tratamiento corporal' },
 ];
 
 export default function Gallery() {
