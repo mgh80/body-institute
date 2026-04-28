@@ -1,7 +1,6 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import Image from 'next/image';
 
 export default function Splash({ onComplete }: { onComplete: () => void }) {
   const [exiting, setExiting] = useState(false);
@@ -17,12 +16,14 @@ export default function Splash({ onComplete }: { onComplete: () => void }) {
   return (
     <div className={`splash-overlay${exiting ? ' splash-exiting' : ''}`}>
       <div className="splash-logo-wrap">
-        <Image
+        <img
           src="/images/logo.png"
           alt="Body Institute"
-          width={380}
-          height={100}
-          priority
+          style={{
+            width: 'clamp(320px, 55vw, 640px)',
+            height: 'auto',
+            display: 'block',
+          }}
         />
       </div>
       <div className="splash-line" />

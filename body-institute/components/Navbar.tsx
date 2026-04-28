@@ -6,8 +6,9 @@ import Link from 'next/link';
 const navLinks = [
   { label: 'Quiénes Somos', href: '#about' },
   { label: 'Servicios', href: '#services' },
-  { label: 'Virtual Tour', href: '#virtual-tour' },
+  { label: 'Boutique Tour', href: '#virtual-tour' },
   { label: 'Galería', href: '#gallery' },
+  { label: 'Médicos', href: '#team' },
   { label: 'Trabaja con Nosotros', href: '#careers' },
 ];
 
@@ -29,9 +30,10 @@ export default function Navbar() {
   src="/images/logo.png" 
   alt="Body Institute" 
   style={{ 
-    height: '90px', 
+    height: '170px !important' as any,
     width: 'auto', 
     display: 'block',
+    marginTop: '40px',
     maxWidth: 'none'
   }} 
 />
@@ -45,7 +47,7 @@ export default function Navbar() {
           ))}
         </ul>
 
-        <a href="#contact" className="nav-cta">Reservar Cita</a>
+        <a href="#contact" className="nav-cta">Contáctanos</a>
 
         <button
           className="hamburger"

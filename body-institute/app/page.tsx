@@ -11,6 +11,7 @@ import VirtualTour from '@/components/VirtualTour';
 import Gallery from '@/components/Gallery';
 import Careers from '@/components/Careers';
 import Footer from '@/components/Footer';
+import Team from '@/components/Team';
 
 export default function Home() {
   const [splashDone, setSplashDone] = useState(false);
@@ -28,6 +29,7 @@ export default function Home() {
         <Hero />
         <Marquee />
         <About />
+        <Team/>
         <Services />
         <VirtualTour />
         <Gallery />

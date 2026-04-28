@@ -28,8 +28,31 @@ export default function Hero() {
 
       <div className="hero-overlay" />
 
+      {/* Logo centrado grande sobre el video */}
+      <div style={{
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        zIndex: 3,
+        textAlign: 'center',
+        opacity: 0,
+        animation: 'heroReveal 1.2s cubic-bezier(0.16,1,0.3,1) 2.6s forwards',
+      }}>
+        <img
+          src="/images/logo.png"
+          alt="Body Institute"
+          style={{
+            width: 'clamp(280px, 35vw, 520px)',
+            height: 'auto',
+            filter: 'brightness(0) invert(1)',
+            display: 'block',
+          }}
+        />
+      </div>
+
       <div className="hero-content">
-        <p className="hero-eyebrow">Body Institute · Clínica Estética</p>
+        <p className="hero-eyebrow">Body Institute · Boutique Estética</p>
         <h1 className="hero-title">
           El arte de<br />
           <em>realzar</em> tu<br />
@@ -46,16 +69,18 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* ✅ ECG reemplaza la línea vieja */}
+      {/* ECG vertical lineal hacia arriba */}
       <div className="hero-scroll">
         <svg
           className="hero-scroll-ecg"
-          viewBox="0 0 60 28"
+          viewBox="0 0 24 200"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
             className="ecg-path"
-            d="M0,14 L8,14 L12,14 L15,4 L18,24 L21,10 L24,18 L27,14 L36,14 L60,14"
+            d="M12,0 L12,18 L6,26 L18,42 L8,54 L16,60 L12,66 L12,80
+               L12,98 L6,106 L18,122 L8,134 L16,140 L12,146 L12,160
+               L12,178 L6,186 L18,202"
           />
         </svg>
         <span>Scroll</span>
